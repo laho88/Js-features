@@ -16,7 +16,23 @@ ul {
 }
 
  a {
-    cursor:default;
     color:black;
     text-decoration: none;
+    
+ }
+
+ .mainWrapper {
+    display: flex;
+    height: 300px;
+    width: 90%;
+ }
+
+ .bodyL {
+    background-color: #ffdab9;
+    width: 50%;
+ }
+
+ .bodyR {
+    background-color: #5f743a;
+    width: 50%;
  }
