@@ -8,35 +8,66 @@
     </head>
     <body>
         <header>
-            <h1>Hello</h1>
+            <h1>Heading</h1>
             <img src="images/" alt="Logo"/>
         </header>
-        <nav id="mainNav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <form>
-                <input type="search" name="queryBox" placeholder="Search"/>
-                <input type="submit" value="Go!"/>
-            </form>
-       </nav>
-       <div id="mainContent">
-            <h1>Main</h1>
+        <main>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#footer">Jump below</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <form>
+                    <input type="search" name="queryBox" placeholder="Search"/>
+                    <input type="submit" value="Go!"/>
+                </form>
+           </nav>
+            <div id="mainContent">
+                <h1>Main</h1>
             <div class="mainWrapper">
-            <div class="bodyL">
-                <p>LEFT</p>
+                <div class="bodyL">
+                    <p>LEFT</p>
+                    <form>
+                        <label for="notebox">NoteBox</label>
+                        <input type="text" id="notebox" name="notebox" value=""/>
+                        <button type="submit" value="">Btn</button>
+                
+                    </form>
+                </div>
+                <div class="bodyR">
+                    <p>RIGHT</p>
+                </div>
             </div>
-            <div class="bodyR">
-                <p>RIGHT</p>
             </div>
+            <div>
+                <h4>Custom form control:</h4>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_build_custom_form_controls">MDN Web Docs</a>
+                <form class="no-widget">
+                    <select name="myList">
+                        <option>Item</option>
+                        <option>Item</option>
+                        <option>Item</option>
+                        <option>Item</option>
+                        <option>Item</option>
+                    </select>
+                    <div class="select">
+                        <span class="value">Cherry</span>
+                        <ul class="optList hidden">
+                            <li class="option">Option</li>
+                            <li class="option">Option</li>
+                            <li class="option">Option</li>
+                            <li class="option">Option</li>
+                            <li class="option">Option</li>
+                        </ul>
+                    </div>
+                </form>
             </div>
-       </div>
-        <footer>
+        </main>
+        <footer id="footer">
             <!-- contact details, copyright, terms and conditions, site language, accessibility polity, ...-->
-             <p></p>
+             <p>Bottom content</p>
         </footer>
         <script src="scripts/app.js">
         </script>
